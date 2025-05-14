@@ -12,25 +12,39 @@ This project uses the **DeepLabv3** model from PyTorch to perform background rem
 
 ## Usage
 
-### Step 1: Clone the Repository
+
+## 📥 Step 1: Clone the Repository
+
 ```bash
 git clone https://github.com/yourusername/background-removal.git
 cd background-removal
+```
 
-### Step 2: Install Dependencies
+## 🧰 Step 2: Install Dependencies
+
+Make sure you have Python installed, then run:
+
 ```bash
 pip install torch torchvision opencv-python numpy Pillow
+```
 
-### Step 3: Prepare Images
+## 🖼️ Step 3: Prepare Images
 
-Ensure you have:
+Ensure you have the following images in the project folder:
 
-foreground.jpg: The image with the foreground (person).
+* `foreground.jpg` → The image with the subject (e.g., a person).
+* `background.jpg` → The image to use as the new background.
 
-background.jpg: The image to replace the background.
+## 🚀 Step 4: Run the Program
 
-### Step 4:  Run the Program
+Run the script using:
+
 ```bash
 python virtual-bg.py
+```
 
-This will process the input and generate output.jpg with the new background.
+This will process the images and generate `output.jpg` with the background replaced.
+
+![Original image](foreground.jpg)
+
+![Original image](output.jpg)
